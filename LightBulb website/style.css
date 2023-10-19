@@ -11,16 +11,41 @@ a {
     color: white;
 }
 
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
 aside {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     background-color: lightgray;
     color: black;
-    float: left;
-    width: 15%;
+    width: 40%;
     height: 100%;
     padding-left: 15px;
+    padding-bottom: 20px;
+}
 
-  
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+main .one {
+    grid-column: 2/3, 3/3;
+    grid-row: 1;
+}
+
+main .two {
+    grid-column: 2/3, 3/3;
+    grid-row: 2;
 }
 
 Body{ 
@@ -30,11 +55,13 @@ body h1,h2 {
     text-align: center;
 }
 
-body img {
+
+.bulb {
     width: 250px;
     height: 251px;
     float: right;
 }
+
 
 
 label, button{display:block; margin-top:1em;}
