@@ -1,0 +1,35 @@
+
+
+header {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+}
+
+
+Body{ 
+    background-color: black;
+}
+body h1,h2 {
+    text-align: center;
+}
+
+body img {
+    width: 250px;
+    height: 251px;
+}
+
+
+label, button{display:block; margin-top:1em;}
+button{margin:2em;}
+.bulb:hover {
+    background-image: url(Bulblight.png);
+}
+
+footer {
+    background-color: pink;
+    padding: 2em;
+
+}
